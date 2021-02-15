@@ -1,6 +1,6 @@
 <?php
 /*
- Plugin Name: Pulse ChatBot
+ Plugin Name: WordPress ChatBot Web Widget
  Plugin URI: https://github.com/stirrell/scc-botman-for-wp
  Description: A WordPress plugin to add the Web Widget for BotMan to a site.
  Author: Scott Tirrell
