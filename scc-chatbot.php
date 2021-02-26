@@ -21,11 +21,11 @@ include SCC_CHATBOT_PLUGIN_PATH . 'inc/admin-functions.php';
  */
 function scc_enqueue_pulse_chatbot() {
 	$css_path = plugins_url( 'dist/css/style.css', __FILE__ );
-	$js_path  = plugins_url( 'dist/js/scc-chatbot-min.js', __FILE__ );
+	$js_path  = plugins_url( 'dist/js/chat-min.js', __FILE__ );
 
 	// Add Versioning based on latest file modified date
 	$css_ver = date( "ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'dist/css/style.css' ) );
-	$js_ver  = date( "ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'dist/js/chatbot-min.js' ) );
+	$js_ver  = date( "ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'dist/js/chat-min.js' ) );
 
     	wp_enqueue_style( 'scc-chatbot', $css_path, array(), $css_ver );
     	wp_enqueue_script( 'scc-chatbot', $js_path, array( 'jquery' ), $js_ver, true );
