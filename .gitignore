@@ -1,0 +1,11 @@
+# ignore all files starting with . or ~
+.*
+~*
+
+# ignore node_modules
+node_modules
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store

@@ -1,0 +1,19 @@
+{
+  "name": "botman_for_wp",
+  "version": "1.0.0",
+  "description": "Simple WordPress plugin for BotMan",
+  "main": "index.php",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Tirrell",
+  "license": "ISC"
+}
