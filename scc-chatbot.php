@@ -20,7 +20,7 @@ include SCC_CHATBOT_PLUGIN_PATH . 'inc/admin-functions.php';
  * Load the JavaScript and CSS for the BotMan web widget.
  */
 function scc_enqueue_pulse_chatbot() {
-	$css_path = plugins_url( 'dist/css/style.css', __FILE__ );
+	$css_path = plugins_url( 'dist/css/styles.css', __FILE__ );
 	$js_path  = plugins_url( 'dist/js/chat-min.js', __FILE__ );
 
 	// Add Versioning based on latest file modified date
