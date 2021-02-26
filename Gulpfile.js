@@ -14,5 +14,18 @@ gulp.task('wp-botman-sass', function() {
         .pipe(cleanCSS())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./dist/css/'))
-        .pipe(notify("Recent Posts Sass compiled."));
+        .pipe(notify("BotMan Sass compiled."));
+});
+
+gulp.task('wp-botman-js', function() {
+    return gulp.src('./js/*.js','!*min.js')
+        .pipe(sourcemaps.init({
+            includeContent: true
+        }))
+        .pipe(minify({
+            noSource: true
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./dist/js'))
+        .pipe(notify("BotMan JavaScript processed."));
 });
