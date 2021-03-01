@@ -20,13 +20,7 @@ include SCC_CHATBOT_PLUGIN_PATH . 'inc/admin-functions.php';
  * Load the JavaScript and CSS for the BotMan web widget.
  */
 function scc_enqueue_pulse_chatbot() {
-	$js_path  = plugins_url( 'dist/js/chat-min.js', __FILE__ );
-
-	// Add Versioning based on latest file modified date
-	$js_ver  = date( "ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'dist/js/chat-min.js' ) );
-
-    wp_enqueue_script( 'pma-chatbot', $js_path, array( 'jquery' ), $js_ver, true );
-	wp_enqueue_script( 'pma-chatbot-widget', plugins_url( 'dist/js/widget-min.js', __FILE__ ), array( 'pma-chatbot' ), null, true );
+    wp_enqueue_script( 'pma-chatbot-widget', plugins_url( 'dist/js/widget-min.js', __FILE__ ), null, null, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'scc_enqueue_pulse_chatbot' );
